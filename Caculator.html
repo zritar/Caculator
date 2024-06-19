@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculator</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td style="width: 100px"><input id="amount1"></td>
+        <td style="width: 100px"><input id="amount2"></td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td><button onclick="Addition()">Addition(+)</button></td>
+        <td><button onclick="Subtraction()">Subtraction(-)</button></td>
+        <td><button onclick="Multiplication()">Multiplication(X)</button></td>
+        <td><button onclick="Division()">Division(/)</button></td>
+    </tr>
+</table>
+<div id="result"></div>
+<script>
+    function Addition(){
+        let amount1 = document.getElementById("amount1").value;
+        let amount2 = document.getElementById("amount2").value;
+        let result1 = +amount2 + +amount1;
+        document.getElementById("result").innerText = "Result addition: " + result1
+    }
+    function Subtraction(){
+        let amount1 = document.getElementById("amount1").value;
+        let amount2 = document.getElementById("amount2").value;
+        let result2 = +amount1 - +amount2;
+        document.getElementById("result").innerText = "Result addition: " + result2
+    }
+    function Multiplication(){
+        let amount1 = document.getElementById("amount1").value;
+        let amount2 = document.getElementById("amount2").value;
+        let result3 = +amount2 * +amount1;
+        document.getElementById("result").innerText = "Result addition: " + result3
+    }
+    function Division(){
+        let amount1 = document.getElementById("amount1").value;
+        let amount2 = document.getElementById("amount2").value;
+        let result4 = +amount1 / + amount2;
+        document.getElementById("result").innerText = "Result addition: " + result4
+    }
+</script>
+</body>
+</html>
